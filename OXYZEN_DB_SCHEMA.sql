@@ -76,7 +76,7 @@ CREATE TABLE StudentsRecord.Scholarship(
 );
 GO
 
---this is our FOREIGN KEY tables
+
 CREATE TABLE StudentsRecord.Student_Parents(
 	StudentId INT,
 	ParentsId INT
@@ -88,6 +88,29 @@ CREATE TABLE StudentsRecord.Student_Course(
 	CourseId INT
 );
 GO
+
+--this is our FOREIGN KEY tables
+
+ALTER TABLE StudentsRecord.Student_Parents
+	ADD CONSTRAINT FKStudentId 
+	FOREIGN KEY (StudentId) REFERENCES StudentsRecord.Student(StudentId);
+GO
+
+ALTER TABLE StudentsRecord.Student_Parents
+	ADD CONSTRAINT FKParentsId
+	FOREIGN KEY (ParentsId) REFERENCES StudentsRecord.ParentsInformation(ParentsId);
+GO
+
+ALTER TABLE StudentsRecord.Student_Course
+	ADD CONSTRAINT FKStudentId_C
+	FOREIGN KEY (StudentId) REFERENCES StudentsRecord.Student (StudentId);
+GO
+
+ALTER TABLE StudentsRecord.Student_Course
+	ADD CONSTRAINT FKCourseId
+	FOREIGN KEY (CourseId) REFERENCES StudentsRecord.Course (CourseId);
+GO
+
 
 --we use CHECK constraint 
 
