@@ -36,17 +36,24 @@ insert into StudentsRecord.Institution (DLINumber, InstitutionName, AddressLine1
 insert into StudentsRecord.Institution (DLINumber, InstitutionName, AddressLine1, AddressLine2, PostCode, City, Country, PhoneNumber) values (10, 'Minyx', '5205 Meadow Vale Lane', 'Dixon', '5504', 'Toronto', 'Canada', '3414543406');
 
 --Program table
-insert into StudentsRecord.Program (ProgramId, ProgramName, StartingDate, EndingDate, ProgramDuration) values (1, 'Merck & Company, Inc.', '5/28/2019', '7/9/2020', '6 months');
-insert into StudentsRecord.Program (ProgramId, ProgramName, StartingDate, EndingDate, ProgramDuration) values (2, 'Nomura Holdings Inc ADR', '8/24/2019', '3/25/2020', '4 months');
-insert into StudentsRecord.Program (ProgramId, ProgramName, StartingDate, EndingDate, ProgramDuration) values (3, 'Kennedy-Wilson Holdings Inc.', '5/9/2019', '7/21/2020', '6 months');
-insert into StudentsRecord.Program (ProgramId, ProgramName, StartingDate, EndingDate, ProgramDuration) values (4, 'Cincinnati Bell Inc', '1/9/2019', '2/21/2020', '4 months');
-insert into StudentsRecord.Program (ProgramId, ProgramName, StartingDate, EndingDate, ProgramDuration) values (5, 'Randgold Resources Limited', '6/21/2019', '1/27/2020', '3 months');
-insert into StudentsRecord.Program (ProgramId, ProgramName, StartingDate, EndingDate, ProgramDuration) values (6, 'FS Investment Corporation', '12/26/2018', '7/14/2020', '4 months');
-insert into StudentsRecord.Program (ProgramId, ProgramName, StartingDate, EndingDate, ProgramDuration) values (7, 'Fortis Inc.', '2/8/2019', '6/20/2020', '2 months');
-insert into StudentsRecord.Program (ProgramId, ProgramName, StartingDate, EndingDate, ProgramDuration) values (8, 'CHF Solutions, Inc.', '5/12/2019', '4/29/2020', '3 months');
-insert into StudentsRecord.Program (ProgramId, ProgramName, StartingDate, EndingDate, ProgramDuration) values (9, 'Welltower Inc.', '9/29/2019', '1/13/2020', '6 months');
+
+
+
+insert into StudentsRecord.Program (ProgramId, ProgramName, StartingDate, EndingDate, ProgramDuration) values (1, 'Product Management', '2019-11-25', '4/1/2020', '3 months');
+insert into StudentsRecord.Program (ProgramId, ProgramName, StartingDate, EndingDate, ProgramDuration) values (2, 'Training', '2019-11-25', '4/1/2020', '9 months');
+insert into StudentsRecord.Program (ProgramId, ProgramName, StartingDate, EndingDate, ProgramDuration) values (3, 'Marketing', '2019-11-25', '4/1/2020', '6 months');
+insert into StudentsRecord.Program (ProgramId, ProgramName, StartingDate, EndingDate, ProgramDuration) values (4, 'Research and Development', '2019-11-25', '4/1/2020', '6 months');
+insert into StudentsRecord.Program (ProgramId, ProgramName, StartingDate, EndingDate, ProgramDuration) values (5, 'Human Resources', '2019-11-25', '4/1/2020', '9 months');
+insert into StudentsRecord.Program (ProgramId, ProgramName, StartingDate, EndingDate, ProgramDuration) values (6, 'Legal', '2019-11-25', '4/1/2020', '4 months');
+insert into StudentsRecord.Program (ProgramId, ProgramName, StartingDate, EndingDate, ProgramDuration) values (7, 'Research and Development', '2019-11-25', '4/1/2020', '6 months');
+insert into StudentsRecord.Program (ProgramId, ProgramName, StartingDate, EndingDate, ProgramDuration) values (8, 'Support', '2019-11-25', '4/1/2020', '6 months');
+insert into StudentsRecord.Program (ProgramId, ProgramName, StartingDate, EndingDate, ProgramDuration) values (9, 'Training', '2019-11-25', '4/1/2020', '4 months');
+
+
+
 
 --Course table
+
 
 insert into StudentsRecord.Course (courseId, CourseName, CourseModule, TimeTable) values (1, 'Mesa Royalty Trust', 'BIOLOGY', '19:32');
 insert into StudentsRecord.Course (courseId, CourseName, CourseModule, TimeTable) values (2, 'Grupo Financiero Santander Mexico S.A. B. de C.V.', 'BIOLOGY', '20:17');
@@ -71,3 +78,4 @@ insert into StudentsRecord.Scholarship (ScholarshipId, ScholarshipName, Amount, 
 insert into StudentsRecord.Scholarship (ScholarshipId, ScholarshipName, Amount, ScholarshipDescr) values (10, 'Silicon Motion Technology Corporation', '$867.50', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla.');
 
 
+SELECT * FROM StudentsRecord.Program
